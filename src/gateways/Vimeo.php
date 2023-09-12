@@ -195,7 +195,7 @@ class Vimeo extends Gateway
     {
         $data = $this->get('videos/' . $id, [
             'query' => [
-                'fields' => 'created_time,description,duration,height,link,name,pictures,pictures,privacy,stats,uri,user,width,download,review_link,files'
+                'fields' => 'created_time,description,duration,height,link,name,pictures,pictures,player_embed_url,privacy,stats,uri,user,width,download,review_link,files'
             ],
         ]);
 
@@ -568,7 +568,8 @@ class Vimeo extends Gateway
         $video->id = (int)substr($data['uri'], \strlen('/videos/'));
         $video->plays = $data['stats']['plays'] ?? 0;
         $video->title = $data['name'];
-        $video->url = 'https://vimeo.com/' . substr($data['uri'], 8);
+        $video->url = $data['link'];
+        $video->embedUrl = $data['player_embed_url'];
         $video->width = $data['width'];
         $video->height = $data['height'];
 
@@ -661,7 +662,7 @@ class Vimeo extends Gateway
     private function performVideosRequest($uri, array $params): array
     {
         $query = $this->queryFromParams($params);
-        $query['fields'] = 'created_time,description,duration,height,link,name,pictures,pictures,privacy,stats,uri,user,width,download,review_link,files';
+        $query['fields'] = 'created_time,description,duration,height,link,name,pictures,pictures,player_embed_url,privacy,stats,uri,user,width,download,review_link,files';
 
         $data = $this->get($uri, [
             'query' => $query
