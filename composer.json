@@ -49,9 +49,12 @@
     }
   },
   "require-dev": {
-    "craftcms/phpstan": "dev-main"
+    "craftcms/phpstan": "dev-main",
+    "craftcms/rector": "dev-main"
   },
   "scripts": {
     "phpstan": "phpstan --memory-limit=1G"
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
