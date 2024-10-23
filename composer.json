@@ -28,7 +28,7 @@
   },
   "require": {
     "php": "^8.0.2",
-    "craftcms/cms": "^4.0.0",
+    "craftcms/cms": "^5.0.0",
     "league/oauth2-client": "^2.5.0",
     "saf33r/oauth2-vimeo": "^0.3.0",
     "league/oauth2-google": "^4.0.0"
