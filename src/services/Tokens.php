@@ -42,6 +42,7 @@ class Tokens extends Component
             return null;
         }
 
+        // @phpstan-ignore method.nonObject
         return new Token($result->toArray([
             'id',
             'gateway',
