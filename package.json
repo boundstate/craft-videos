@@ -1,6 +1,5 @@
 {
   "name": "videos",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "webpack --node-env=production",

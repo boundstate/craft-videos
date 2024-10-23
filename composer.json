@@ -15,12 +15,16 @@
     {
       "name": "Dukt",
       "homepage": "https://dukt.net/"
+    },
+    {
+      "name": "Bound State Software",
+      "homepage": "https://boundstatesoftware.com"
     }
   ],
   "support": {
-    "docs": "https://github.com/dukt/videos/tree/v3/docs/docs",
-    "source": "https://github.com/dukt/videos",
-    "issues": "https://github.com/dukt/videos/issues?state=open"
+    "docs": "https://github.com/boundstate/craft-videos?tab=readme-ov-file#readme",
+    "source": "https://github.com/boundstate/craft-videos",
+    "issues": "https://github.com/boundstate/craft-videos/issues"
   },
   "require": {
     "php": "^8.0.2",

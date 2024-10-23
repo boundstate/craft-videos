@@ -1,9 +1,8 @@
 # Video Field
 
 ## The Field
-The Video field type lets you add videos to your entries. Retrieving video informations is then pretty easy : a video variable is provided which let's you retrieve all the informations related to your video.
 
-![Video Field](./resources/screenshots/video-field@2x.png)
+The Video field type lets you add videos to your entries. Retrieving video information is then pretty easy : a video variable is provided which lets you retrieve all the information related to your video.
 
 ## Output
 

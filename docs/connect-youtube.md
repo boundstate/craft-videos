@@ -4,10 +4,6 @@
 - Navigate to **Settings → Videos → YouTube**.
 - Click on the “OAuth Settings” link.
 
-![Control Panel Settings](./resources/youtube/craft-1.png)
-![YouTube Settings](./resources/youtube/craft-2.png)
-![YouTube OAuth Settings](./resources/youtube/craft-3.png)
-
 ## 1. Check your domain name
 
 For the authentication to work, Google requires that your domain ends with a public top-level domain (such as .com or .org).
@@ -24,9 +20,6 @@ In this example, we get around Google’s requirements by using a `.dev` domain 
 - Choose a project name and click “Create”.
 - It might not automatically take you to your newly created project, so make sure that it's selected in the projects dropdown (next to the “Google APIs” logo).
 
-![New Project](./resources/youtube/oauth-project-1.png)
-
-
 ## 3. Enable YouTube APIs
 
 - In the [Google Developer Console](https://console.developers.google.com/), navigate to **API & Services → Library.**
@@ -34,8 +27,6 @@ In this example, we get around Google’s requirements by using a `.dev` domain 
 - Enable the following APIs:
     -  YouTube Analytics API
     -  YouTube Data API v3
-
-![YouTube APIs](./resources/youtube/oauth-project-2.png)
 
 ## 4. Configure the OAuth consent screen
 
@@ -51,11 +42,6 @@ When connecting to your YouTube account, your website requests authorizations to
 - On the “Scopes” screen, don’t do anything and click “Save and continue”.
 - Google then shows you a summary, click the “Back to dashboard” button.
 
-![Configure OAuth Consent Screen](./resources/youtube/oauth-consent-screen-1.png)
-![OAuth Consent Screen - Step 1](./resources/youtube/oauth-consent-screen-2.png)
-![OAuth Consent Screen - Step 2](./resources/youtube/oauth-consent-screen-3.png)
-![OAuth Consent Screen - Step 3](./resources/youtube/oauth-consent-screen-4.png)
-
 ## 5. Create the OAuth client
 
 - Go to your Google Developer Console project.
@@ -67,10 +53,6 @@ When connecting to your YouTube account, your website requests authorizations to
 - Copy the authorized redirect URL from the Videos plugin OAuth settings, in your Craft CMS control panel.
 - Click “Save”.
 
-
-![Create the OAuth client](./resources/youtube/oauth-client-1.png)
-![Configure the OAuth client](./resources/youtube/oauth-client-2.png)
-
 ## 6. Configure the OAuth client
 
 Once the OAuth client is created, Google will provide you with a client ID and secret.
@@ -81,20 +63,11 @@ Once the OAuth client is created, Google will provide you with a client ID and s
 - Click on the “OAuth Settings” link.
 - Paste the OAuth client and secret into the corresponding fields and click “Save”.
 
-![OAuth client ID and secret](./resources/youtube/oauth-client-3.png)
-![YouTube OAuth Settings with credentials](./resources/youtube/craft-4.png)
-
 ## 7. Connect to YouTube
 
 You should now be ready to connect your Craft CMS website to your YouTube account:
 
 - Go to your Craft CMS control panel.
 - Navigate to **Settings → Videos → YouTube** and click ”Connect to YouTube”.
-
-![Connect to YouTube](./resources/youtube/craft-5.png)
-![Google Connect](./resources/youtube/craft-6.png)
-![Google Authorizations](./resources/youtube/craft-7.png)
-![List of connected video providers](./resources/youtube/craft-8.png)
-![YouTube account connected](./resources/youtube/craft-9.png)
 
 🎉

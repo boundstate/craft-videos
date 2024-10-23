@@ -1,18 +1,58 @@
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dukt/videos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dukt/videos/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/dukt/videos/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dukt/videos/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/dukt/videos/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dukt/videos/build-status/master) [![Code Intelligence Status](https://scrutinizer-ci.com/g/dukt/videos/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
-
-# Videos for Craft CMS 4.x
+# Videos for Craft CMS 5.x
 
 Connect to YouTube & Vimeo and publish social videos on your website.
 
 ## Requirements
 
-This plugin requires Craft CMS 4.0.0 or later.
+This plugin requires Craft CMS 5.0.0+.
 
-## How to install Videos 3
+## Installation
 
-Installation instructions can be found in the [Videos 3 documentation](docs/docs/installation.md).
+Open your terminal and run the following commands:
+
+```bash
+# go to the project directory
+cd /path/to/my-project
+
+# tell Composer to load the plugin
+composer require boundstate/craft-videos
+
+# tell Craft to install the plugin
+./craft plugin/install videos
+```
+
+## Configuration
+
+### config/videos.php
+
+```php
+<?php
+return [
+    // cache API requests
+    'enableCache' => true,
+    // https://php.net/dateinterval.construct
+    'cacheDuration' => 'PT15M',
+    // OAuth provider options
+    'oauthProviderOptions' => [
+        'youtube' => [
+            'clientId' => '000000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
+            'clientSecret' => 'xxxxxxxxxxxxxxxxxxxxxxxx'
+        ],
+        'vimeo' => [
+            'clientId' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'clientSecret' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        ],
+    ],
+    // videos per page in the explorer
+    'videosPerPage' => 30,
+];
+```
 
 ## Resources
 
-- [Videos 3 Documentation](docs/docs/)
-- [Videos Plugin Overview](https://dukt.net/videos)
+- [Connect Vimeo](docs/connect-vimeo.md)
+- [Connect YouTube](docs/connect-youtube.md)
+- [Twig Variables](docs/twig-variables.md)
+- [Video Field](docs/video-field.md)
+- [Video Model](docs/video-model.md)
+

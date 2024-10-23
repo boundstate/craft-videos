@@ -1,6 +1,5 @@
 <?php
 /**
- * @link      https://dukt.net/videos/
  * @copyright Copyright (c) Dukt
  * @license   https://github.com/dukt/videos/blob/v2/LICENSE.md
  */

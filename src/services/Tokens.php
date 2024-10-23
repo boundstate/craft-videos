@@ -1,6 +1,5 @@
 <?php
 /**
- * @link      https://dukt.net/videos/
  * @copyright Copyright (c) Dukt
  * @license   https://github.com/dukt/videos/blob/v2/LICENSE.md
  */
@@ -8,7 +7,6 @@
 namespace dukt\videos\services;
 
 use Craft;
-use dukt\analytics\errors\InvalidViewException;
 use dukt\videos\errors\TokenNotFoundException;
 use dukt\videos\models\Token;
 use dukt\videos\records\Token as TokenRecord;
