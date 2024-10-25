@@ -9,6 +9,7 @@ namespace dukt\videos\fields;
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
+use craft\base\MergeableFieldInterface;
 use craft\helpers\Db;
 use craft\helpers\StringHelper;
 use dukt\videos\helpers\VideosHelper;
@@ -19,7 +20,7 @@ use craft\helpers\Html;
 /**
  * Video field
  */
-class Video extends Field
+class Video extends Field implements MergeableFieldInterface
 {
     // Public Methods
     // =========================================================================
